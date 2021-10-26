@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddStudent">
+
+    <TextView
+        android:id="@+id/title_addStudent"
+        android:layout_width="341dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/TitleEditStudent"
+        android:textSize="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subtitl_StudentId"
+        android:layout_width="127dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="288dp"
+        android:text="@string/SubtitlStudentId"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/title_addStudent"
+        app:layout_constraintTop_toBottomOf="@+id/title_addStudent" />
+
+    <TextView
+        android:id="@+id/studentNameSub"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/studentNameSub"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/title_addStudent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitl_StudentId" />
+
+    <EditText
+        android:id="@+id/txtStudentId"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginTop="288dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:autofillHints="@string/EnterStudentIdHint"
+        android:ems="10"
+        android:hint="@string/EnterStudentIdHint"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_addStudent" />
+
+    <EditText
+        android:id="@+id/studentNameTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:autofillHints="@string/EnterStudentIdHint"
+        android:ems="10"
+        android:hint="@string/studentNameHint"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitl_StudentId" />
+
+    <Button
+        android:id="@+id/btn_addStudent"
+        android:layout_width="346dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/BtnAddStudent"
+        app:layout_constraintStart_toStartOf="@+id/subtitl_StudentId"
+        app:layout_constraintTop_toBottomOf="@+id/studentNameSub" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="174dp"
+        android:layout_height="171dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginLeft="118dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/imageDesc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_addStudent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/cameraBtn"
+        android:layout_width="183dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginLeft="118dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/cameraBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

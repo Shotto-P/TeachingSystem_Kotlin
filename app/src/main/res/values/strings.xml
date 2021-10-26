@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Marking System</string>
+    <string name="button_add_course">Add Course</string>
+    <string name="button_remove_course">Remove Course</string>
+    <string name="EnterCourseIdHint">Enter the Course ID</string>
+    <string name="EnterCourseNameHint">Enter the course name</string>
+    <string name="TitleAddCourse">Add Course</string>
+    <string name="SubtitlCID">Course ID</string>
+    <string name="SubtitlCN">Course Name</string>
+    <string name="BtnAddCourse">Add Course</string>
+    <string name="EditWeeksTitle">Edit Week</string>
+    <string name="SubtitlWeek">Week</string>
+    <string name="EnterWeekHint">Enter the week(e.g.Week 01)</string>
+    <string name="BtnAddWeek">Add</string>
+    <string name="BtnRemoveWeek">Remove</string>
+    <string name="BtnEditStudent">Add/Remove Student</string>
+    <string name="BtnMarkScheme">Marking Scheme</string>
+    <string name="TitleEditStudent">Edit Student</string>
+    <string name="SubtitlStudentId">Student ID</string>
+    <string name="EnterStudentIdHint">Enter student ID</string>
+    <string name="BtnAddStudent">Add Student</string>
+    <string name="BtnRemoveStudent">Remove Student</string>
+    <string name="CheckboxAttend">Attended</string>
+    <string name="BtnUpdate">Update</string>
+    <string name="TitleUpdate">Update Student</string>
+    <string name="SubtitlSid">Student ID</string>
+    <string name="SubtitlMarkScheme">Marking Scheme</string>
+    <string name="SubtitlGrade">Grade</string>
+    <string name="SubtitlAttend">Attendance</string>
+    <string name="BtnUpdateConfrim">Update Confirm</string>
+    <string name="ToolbarSubTitl">Choose the week</string>
+    <string name="deleteBtn">Remove this Course</string>
+    <string name="studentNameSub">Student Name</string>
+    <string name="studentNameHint">Enter Student Name</string>
+    <string name="fabHint">Delete</string>
+    <string name="studentName">Student Name</string>
+    <string name="imageDesc">Avatar</string>
+    <string name="cameraBtn">Take a Photo</string>
+    <string-array name="HDgradesScheme">
+        <item>HD+</item>
+        <item>HD</item>
+        <item>DN</item>
+        <item>CR</item>
+        <item>PP</item>
+        <item>NN</item>
+    </string-array>
+    <string-array name="ABCgradesScheme">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>F</item>
+    </string-array>
+    <string-array name="MarkingScheme">
+        <item>HD+/HD/DN/CR/PP/NN</item>
+        <item>A/B/C/D/F</item>
+    </string-array>
+</resources>

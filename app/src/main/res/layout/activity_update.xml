@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Update">
+
+    <TextView
+        android:id="@+id/title_update"
+        android:layout_width="394dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/TitleUpdate"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subtitl_week"
+        android:layout_width="111dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/SubtitlWeek"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/title_update"
+        app:layout_constraintTop_toBottomOf="@+id/title_update" />
+
+    <TextView
+        android:id="@+id/txtWeek"
+        android:layout_width="251dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/title_update"
+        app:layout_constraintTop_toBottomOf="@+id/title_update" />
+
+    <TextView
+        android:id="@+id/subtitl_sid"
+        android:layout_width="111dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="168dp"
+        android:gravity="center"
+        android:text="@string/SubtitlSid"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/title_update"
+        app:layout_constraintTop_toBottomOf="@+id/title_update" />
+
+    <TextView
+        android:id="@+id/txtSid"
+        android:layout_width="251dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="168dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/title_update"
+        app:layout_constraintTop_toBottomOf="@+id/title_update" />
+
+    <TextView
+        android:id="@+id/markingSchemeSub"
+        android:layout_width="111dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:text="@string/SubtitlMarkScheme"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitl_attend" />
+
+    <TextView
+        android:id="@+id/subtitl_grade"
+        android:layout_width="111dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:text="@string/SubtitlGrade"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/markingSchemeSub" />
+
+    <Spinner
+        android:id="@+id/spinner_grade"
+        android:layout_width="251dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_markscheme" />
+
+    <Spinner
+        android:id="@+id/spinner_markscheme"
+        android:layout_width="251dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <TextView
+        android:id="@+id/subtitl_attend"
+        android:layout_width="111dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:text="@string/SubtitlAttend"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/subtitl_grade"
+        app:layout_constraintTop_toBottomOf="@+id/subtitl_sid" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="251dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:text="@string/CheckboxAttend"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSid" />
+
+    <Button
+        android:id="@+id/btn_updateConfirm"
+        android:layout_width="392dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/BtnUpdateConfrim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitl_grade" />
+
+    <TextView
+        android:id="@+id/stdName"
+        android:layout_width="125dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:text="@string/studentName"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitl_week" />
+
+    <EditText
+        android:id="@+id/stdNameTextField"
+        android:layout_width="248dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:autoText="false"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWeek"
+        android:autofillHints="" />
+</androidx.constraintlayout.widget.ConstraintLayout>
